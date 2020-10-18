@@ -1,0 +1,448 @@
+{
+	"listUsers": [],
+	"findUsers": [
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"getUser": [
+		"id"
+	],
+	"getCurrentUser": [],
+	"updateUser": [
+		"id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		},
+		{
+			"name": "send_mail",
+			"default": 0
+		}
+	],
+	"createUser": [
+		"name",
+		"email",
+		"password",
+		{
+			"name": "lang",
+			"default": ""
+		},
+		{
+			"name": "send_mail",
+			"default": 0
+		}
+	],
+	"deleteUser": [
+		"id"
+	],
+	"getUserRole": [
+		"user_id",
+		"server_id"
+	],
+	"setUserRole": [
+		"user_id",
+		"server_id",
+		"role"
+	],
+	"getUserFtpAccess": [
+		"user_id",
+		"server_id"
+	],
+	"setUserFtpAccess": [
+		"user_id",
+		"server_id",
+		"mode"
+	],
+	"getUserId": [
+		"name"
+	],
+	"validateUser": [
+		"name",
+		"password"
+	],
+	"generateUserApiKey": [
+		"user_id"
+	],
+	"getUserApiKey": [
+		"user_id"
+	],
+	"removeUserApiKey": [
+		"user_id"
+	],
+	"listPlayers": [
+		"server_id"
+	],
+	"findPlayers": [
+		"server_id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"getPlayer": [
+		"id"
+	],
+	"updatePlayer": [
+		"id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"createPlayer": [
+		"server_id",
+		"name"
+	],
+	"deletePlayer": [
+		"id"
+	],
+	"assignPlayerToUser": [
+		"player_id",
+		"user_id"
+	],
+	"listCommands": [
+		"server_id"
+	],
+	"findCommands": [
+		"server_id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"getCommand": [
+		"id"
+	],
+	"updateCommand": [
+		"id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"createCommand": [
+		"server_id",
+		"name",
+		"role",
+		"chat",
+		"response",
+		"run"
+	],
+	"deleteCommand": [
+		"id"
+	],
+	"listServers": [],
+	"findServers": [
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"listServersByConnection": [
+		"connection_id"
+	],
+	"listServersByOwner": [
+		"user_id"
+	],
+	"getServer": [
+		"id"
+	],
+	"updateServer": [
+		"id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"createServerOn": [
+		{
+			"name": "daemon_id",
+			"default": 0
+		},
+		{
+			"name": "no_commands",
+			"default": 0
+		},
+		{
+			"name": "no_setup_script",
+			"default": 0
+		}
+	],
+	"createServer": [
+		{
+			"name": "name",
+			"default": ""
+		},
+		{
+			"name": "port",
+			"default": 0
+		},
+		{
+			"name": "base",
+			"default": ""
+		},
+		{
+			"name": "players",
+			"default": 0
+		},
+		{
+			"name": "no_commands",
+			"default": 0
+		},
+		{
+			"name": "no_setup_script",
+			"default": 0
+		}
+	],
+	"suspendServer": [
+		"id",
+		{
+			"name": "stop",
+			"default": 1
+		}
+	],
+	"resumeServer": [
+		"id",
+		{
+			"name": "start",
+			"default": 1
+		}
+	],
+	"deleteServer": [
+		"id",
+		{
+			"name": "delete_dir",
+			"default": "no"
+		},
+		{
+			"name": "delete_user",
+			"default": "no"
+		}
+	],
+	"getServerStatus": [
+		"id",
+		{
+			"name": "player_list",
+			"default": 0
+		}
+	],
+	"getServerOwner": [
+		"server_id"
+	],
+	"setServerOwner": [
+		"server_id",
+		"user_id",
+		{
+			"name": "send_mail",
+			"default": 0
+		}
+	],
+	"getServerConfig": [
+		"id"
+	],
+	"updateServerConfig": [
+		"id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"startServerBackup": [
+		"id"
+	],
+	"getServerBackupStatus": [
+		"id"
+	],
+	"startServer": [
+		"id"
+	],
+	"stopServer": [
+		"id"
+	],
+	"restartServer": [
+		"id"
+	],
+	"killServer": [
+		"id"
+	],
+	"startAllServers": [],
+	"stopAllServers": [],
+	"restartAllServers": [],
+	"killAllServers": [],
+	"sendConsoleCommand": [
+		"server_id",
+		"command"
+	],
+	"sendAllConsoleCommand": [
+		"command"
+	],
+	"runCommand": [
+		"server_id",
+		"command_id",
+		{
+			"name": "run_for",
+			"default": 0
+		}
+	],
+	"getServerLog": [
+		"id"
+	],
+	"clearServerLog": [
+		"id"
+	],
+	"getServerChat": [
+		"id"
+	],
+	"clearServerChat": [
+		"id"
+	],
+	"sendServerControl": [
+		"id",
+		"command"
+	],
+	"getServerResources": [
+		"id"
+	],
+	"moveServer": [
+		"server_id",
+		"daemon_id"
+	],
+	"listConnections": [],
+	"findConnections": [
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"getConnection": [
+		"id"
+	],
+	"removeConnection": [
+		"id"
+	],
+	"getConnectionStatus": [
+		"id"
+	],
+	"getConnectionMemory": [
+		"id",
+		{
+			"name": "include_suspended",
+			"default": 0
+		}
+	],
+	"getStatistics": [
+		{
+			"name": "daemon_id",
+			"default": 0
+		},
+		{
+			"name": "include_suspended",
+			"default": 0
+		}
+	],
+	"listSettings": [],
+	"getSetting": [
+		"key"
+	],
+	"setSetting": [
+		"key",
+		"value"
+	],
+	"deleteSetting": [
+		"key"
+	],
+	"listSchedules": [
+		"server_id"
+	],
+	"findSchedules": [
+		"server_id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"getSchedule": [
+		"id"
+	],
+	"updateSchedule": [
+		"id",
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		}
+	],
+	"createSchedule": [
+		"server_id",
+		"name",
+		"ts",
+		"interval",
+		"cmd",
+		"status",
+		"for"
+	],
+	"deleteSchedule": [
+		"id"
+	],
+	"getDatabaseInfo": [
+		"server_id"
+	],
+	"createDatabase": [
+		"server_id"
+	],
+	"changeDatabasePassword": [
+		"server_id"
+	],
+	"deleteDatabase": [
+		"server_id"
+	]
+}
