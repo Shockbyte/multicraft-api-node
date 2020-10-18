@@ -1,6 +1,6 @@
 {
-  "name": "multicraft-api",
-  "version": "1.0.0",
+  "name": "multicraft-api-node",
+  "version": "2.2.1",
   "description": "",
   "main": "index.js",
   "scripts": {

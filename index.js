@@ -55,11 +55,11 @@ class MulticraftAPI {
 				if (typeof data[out.name] !== "undefined") {
 					out.value = data[out.name];
 
-                    // if array type, turn into json string
+					// if array type, turn into json string
 					if (param.type === 'array') {
 						out.value = JSON.stringify(out.value)
 					}
-                }
+				}
 
 				return out;
 			});
@@ -79,11 +79,11 @@ class MulticraftAPI {
 	// TODO cleanup errors
 	_call(method, params) {
 		// convert to object
-        params = params.reduce((p,v) => {
-            p[v.name] = v.value;
-            return p;
+		params = params.reduce((p, v) => {
+			p[v.name] = v.value;
+			return p;
 		}, {});
-		
+
 		return new Promise(async (resolve, reject) => {
 			params._MulticraftAPIMethod = method;
 			params._MulticraftAPIUser = this.user;
