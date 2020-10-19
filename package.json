@@ -1,18 +1,28 @@
 {
   "name": "multicraft-api-node",
-  "version": "2.2.2",
+  "version": "2.2.1",
   "description": "API Version 2.2.1",
   "main": "index.js",
-  "homepage": "https://github.com/jameshawkinss/multicraft-api-node",
+  "homepage": "https://github.com/Shockbyte/multicraft-api-node",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jameshawkinss/multicraft-api-node.git"
+    "url": "git+https://github.com/Shockbyte/multicraft-api-node"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "James Hawkins",
+  "author": {
+    "name": "James Hawkins",
+    "url": "https://github.com/jameshawkinss"
+  },
+  "contributors": [
+    {
+      "name": "Mitch Smith",
+      "email": "mitch@shockbyte.com",
+      "url": "https://shockbyte.com"
+    }
+  ],
   "license": "ISC",
   "dependencies": {
     "crypto": "^1.0.1",
