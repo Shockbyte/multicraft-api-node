@@ -1,4 +1,5 @@
-const MulticraftAPI = require('./index');
+// npm install multicraft-api-node
+const MulticraftAPI = require('multicraft-api-node');
 
 const api = new MulticraftAPI({
     url: "http://localhost/api.php",
@@ -22,7 +23,7 @@ async function examples() {
     }
 
     try {
-        const listServersByConnection = await api.listServersByConnection();
+        const listServersByConnection = await api.listServersByConnection({ connection_id: '1' });
         console.log(listServersByConnection);
         // {
         //     success: true,
