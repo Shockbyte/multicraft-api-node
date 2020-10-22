@@ -22,17 +22,14 @@ async function examples() {
         console.log(e);
     }
 
-    try {
-        const listServersByConnection = await api.listServersByConnection({ connection_id: '1' });
-        console.log(listServersByConnection);
-        // {
-        //     success: true,
-        //     errors: [],
-        //     data: { Servers: { '1': 'test', '2': 'Minecraft Server' } }
-        // }
-    } catch (e) {
-        console.log(e);
-    }
+    api.listServersByConnection({ connection_id: '1' })
+        .then((data) => console.log(data))
+        .catch((err) => console.error(err));
+    // {
+    //     success: true,
+    //     errors: [],
+    //     data: { Servers: { '1': 'test', '2': 'Minecraft Server' } }
+    // }
 }
 
 examples()
