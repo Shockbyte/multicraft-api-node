@@ -79,6 +79,17 @@
 	"removeUserApiKey": [
 		"user_id"
 	],
+	"getOwnApiKey": [
+		"password",
+		{
+			"name": "generate",
+			"default": 0
+		},
+		{
+			"name": "gauth_code",
+			"default": ""
+		}
+	],
 	"listPlayers": [
 		"server_id"
 	],
@@ -109,7 +120,11 @@
 	],
 	"createPlayer": [
 		"server_id",
-		"name"
+		"name",
+		{
+			"name": "op_command",
+			"default": 0
+		}
 	],
 	"deletePlayer": [
 		"id"
@@ -218,6 +233,32 @@
 		{
 			"name": "players",
 			"default": 0
+		},
+		{
+			"name": "no_commands",
+			"default": 0
+		},
+		{
+			"name": "no_setup_script",
+			"default": 0
+		}
+	],
+	"createAndConfigureServer": [
+		{
+			"name": "field",
+			"type": "array"
+		},
+		{
+			"name": "value",
+			"type": "array"
+		},
+		{
+			"name": "configField",
+			"type": "array"
+		},
+		{
+			"name": "configValue",
+			"type": "array"
 		},
 		{
 			"name": "no_commands",
@@ -344,6 +385,20 @@
 	"moveServer": [
 		"server_id",
 		"daemon_id"
+	],
+	"listServerPorts": [
+		"id"
+	],
+	"addServerPort": [
+		"id",
+		{
+			"name": "port",
+			"default": 0
+		}
+	],
+	"removeServerPort": [
+		"id",
+		"port"
 	],
 	"listConnections": [],
 	"findConnections": [
