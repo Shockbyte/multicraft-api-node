@@ -7,7 +7,7 @@ A Node.js wrapper for the Multicraft API.
 
 `npm i multicraft-api-node`
 
-```
+```javascript
 const MulticraftAPI = require('multicraft-api-node');
 
 const api = new MulticraftAPI({
