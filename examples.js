@@ -3,8 +3,8 @@ const MulticraftAPI = require('multicraft-api-node');
 
 const api = new MulticraftAPI({
     url: "https://localhost/api.php",
-    user: "admin",
-    key: "5kd9HaPid@mWqK"
+    user: "username",
+    key: "apiKey"
 });
 
 async function examples() {
