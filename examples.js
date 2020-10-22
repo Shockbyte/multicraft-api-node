@@ -2,7 +2,7 @@
 const MulticraftAPI = require('multicraft-api-node');
 
 const api = new MulticraftAPI({
-    url: "http://localhost/api.php",
+    url: "https://localhost/api.php",
     user: "admin",
     key: "5kd9HaPid@mWqK"
 });
