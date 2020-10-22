@@ -2,9 +2,34 @@
 
 A Node.js wrapper for the Multicraft API.
 
-To view examples of use, check out the `examples.js` file.
 
-### Updating
+### Example use
+
+`npm i multicraft-api-node`
+
+```
+const MulticraftAPI = require('multicraft-api-node');
+
+const api = new MulticraftAPI({
+    url: "https://localhost/api.php",
+    user: "username",
+    key: "apiKey"
+});
+
+api.listServersByConnection({ connection_id: '1' })
+    .then((data) => console.log(data))
+    .catch((err) => console.error(err));
+
+// {
+//     success: true,
+//     errors: [],
+//     data: { Servers: { '1': 'test', '2': 'Minecraft Server' } }
+// }
+
+```
+To view more examples of use, check out the `examples.js` file.
+
+### Manual Updating
 
 The `methods.json` file automatically generates the functions. To update this file:
 

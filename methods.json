@@ -181,6 +181,10 @@
 		{
 			"name": "value",
 			"type": "array"
+		},
+		{
+			"name": "details",
+			"default": "0"
 		}
 	],
 	"listServersByConnection": [
@@ -386,6 +390,9 @@
 		"server_id",
 		"daemon_id"
 	],
+	"getMoveStatus": [
+		"server_id"
+	],
 	"listServerPorts": [
 		"id"
 	],
@@ -429,13 +436,25 @@
 	],
 	"getStatistics": [
 		{
-			"name": "daemon_id",
+			"name": "id",
 			"default": 0
 		},
 		{
 			"name": "include_suspended",
 			"default": 0
 		}
+	],
+	"runScript": [
+		"daemon_id",
+		"script",
+		{
+			"name": "args",
+			"default": ""
+		}
+	],
+	"getScript": [
+		"daemon_id",
+		"scriptId"
 	],
 	"listSettings": [],
 	"getSetting": [
