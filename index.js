@@ -76,7 +76,6 @@ class MulticraftAPI {
 		return crypto.createHmac('sha256', this.key).update(signature).digest('hex');
 	}
 
-	// TODO cleanup errors
 	_call(method, params) {
 		// convert to object
 		params = params.reduce((p, v) => {
@@ -93,7 +92,7 @@ class MulticraftAPI {
 				form: params
 			});
 			const data = JSON.parse(res.body);
-			if (!data.success) return reject(res);
+			if (!data.success) return reject(data);
 			resolve(data);
 		})
 	}
